@@ -10,15 +10,21 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #ffffff;
+            background: #00205B; /* Blue background */
         }
 
-        /* --- FULL-WIDTH BANNER IMAGE --- */
+        /* --- SMALLER CENTERED BANNER --- */
+        .banner-wrapper {
+            text-align: center;
+            padding: 20px 0;
+            background: #00205B;
+        }
+
         .banner-image {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-bottom: 4px solid #00205B;
+            width: 50%;
+            max-width: 700px;
+            border: 6px solid #ffffff;
+            border-radius: 4px;
         }
 
         /* --- SMALL LOGO HEADER --- */
@@ -85,6 +91,7 @@
             margin: auto;
             padding: 30px;
             background: #ffffff;
+            margin-top: 20px;
         }
 
         h2 {
@@ -102,6 +109,10 @@
 
         /* --- MOBILE LAYOUT --- */
         @media (max-width: 600px) {
+
+            .banner-image {
+                width: 90%;
+            }
 
             .header-container {
                 flex-direction: column;
@@ -145,8 +156,10 @@
 
 <body>
 
-<!-- FULL-WIDTH BANNER -->
-<img src="17Mai-StudentCelebrations.png" alt="17 Mai Celebrations" class="banner-image">
+<!-- SMALLER CENTERED BANNER -->
+<div class="banner-wrapper">
+    <img src="17Mai-StudentCelebrations.png" alt="17 Mai Celebrations" class="banner-image">
+</div>
 
 <header>
     <div class="header-container">
@@ -186,4 +199,18 @@
     <p>Our programme runs from September to June, and includes:</p>
 
     <ul>
-        <li>Lectures and cultural
+        <li>Lectures and cultural presentations</li>
+        <li>Musical evenings and social gatherings</li>
+        <li>Annual Julebasar (Christmas Fair)</li>
+        <li>Special events celebrating Norwegian traditions</li>
+    </ul>
+
+    <p>New members are always welcome.</p>
+</main>
+
+<footer>
+    <p>© Scottish Norwegian Society (Glasgow)</p>
+</footer>
+
+</body>
+</html>

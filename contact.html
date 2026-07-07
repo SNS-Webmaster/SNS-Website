@@ -44,3 +44,143 @@
         /* --- NAVIGATION BAR --- */
         nav {
             background: #EF2B2D;
+            padding: 10px 0;
+            border-bottom: 4px solid #00205B;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- MAIN CONTENT --- */
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            background: #ffffff;
+        }
+
+        h2 {
+            color: #00205B;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #00205B;
+            color: white;
+            border-top: 4px solid #EF2B2D;
+            margin-top: 40px;
+        }
+
+        /* --- MOBILE LAYOUT --- */
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo-small {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            nav ul {
+                display: block;
+                text-align: left;
+                padding-left: 20px;
+            }
+
+            nav li {
+                display: block;
+                margin: 8px 0;
+            }
+
+            nav a {
+                font-size: 18px;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <img src="SNS-Logo_Wood.jpg" alt="Logo" class="logo-small">
+        <div class="header-text">
+            <h1>Scottish Norwegian Society (Glasgow)</h1>
+            <p>Contact Us</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="annual-lecture.html">Annual Memorial Lecture</a></li>
+        <li><a href="julebasar.html">Julebasar</a></li>
+        <li><a href="next-meeting.html">Next Meeting</a></li>
+        <li><a href="notice-board.html">Notice Board</a></li>
+        <li><a href="objectives.html">Objectives</a></li>
+        <li><a href="council.html">Current Council</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="history.html">History Timeline</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="past-events.html">Past Events</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Contact Us</h2>
+    <p>If you would like more information about the Society, our events, or membership,
+       you can reach us using the details below.</p>
+
+    <ul>
+        <li><strong>Email:</strong> (Add email address here)</li>
+        <li><strong>Phone:</strong> (Add phone number here)</li>
+        <li><strong>Postal Address:</strong> (Add address here)</li>
+    </ul>
+
+    <p>We look forward to hearing from you.</p>
+</main>
+
+<footer>
+    <p>© Scottish Norwegian Society, Glasgow</p>
+</footer>
+
+</body>
+</html>

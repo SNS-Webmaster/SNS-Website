@@ -12,23 +12,36 @@
             padding: 0;
             background: #00205B; /* Blue background */
         }
-
-       
-        /* --- CENTERED BANNER MATCHING MAIN WIDTH --- */
+/* --- CENTERED BANNER MATCHING MAIN WIDTH --- */
 .banner-wrapper {
     text-align: center;
     padding: 20px 0;
     background: #00205B; /* Blue background */
+    position: relative;
 }
 
+/* Banner image with double border */
 .banner-image {
     width: 100%;
     max-width: 900px;   /* SAME WIDTH AS MAIN CONTENT */
-    border: 6px solid #ffffff;
+    border: 6px solid #ffffff;      /* Outer white border */
+    box-shadow: 0 0 0 3px #EF2B2D;  /* Inner thin Norwegian-red border */
+    border-radius: 6px;
+}
+
+/* --- FLAG RIBBON (top-right corner) --- */
+.flag-ribbon {
+    position: absolute;
+    top: 25px;
+    right: calc(50% - 450px); /* aligns with banner edge */
+    width: 60px;
+    height: 40px;
+    background: url('SNS-Logo_Wood.jpg') no-repeat center center;
+    background-size: cover;
+    border: 3px solid #ffffff;
     border-radius: 4px;
+}
 
-
-        }
 
         /* --- SMALL LOGO HEADER --- */
         .header-container {

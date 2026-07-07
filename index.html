@@ -161,4 +161,132 @@
             margin-top: 40px;
         }
 
-        /* ---
+        /* --- MOBILE LAYOUT --- */
+        @media (max-width: 600px) {
+
+            .banner-image {
+                width: 90%;
+            }
+
+            .flag-ribbon {
+                right: 10px;
+            }
+
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo-small {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            nav ul.menu > li {
+                display: block;
+                text-align: left;
+                margin: 8px 0;
+            }
+
+            nav ul.submenu {
+                position: static;
+                border: none;
+                background: #00205B;
+                border-radius: 0;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- BANNER -->
+<div class="banner-wrapper">
+    <img src="17Mai-StudentCelebrations.png" alt="17 Mai Celebrations" class="banner-image">
+    <div class="flag-ribbon"></div>
+</div>
+
+<header>
+    <div class="header-container">
+        <img src="SNS-Logo_Wood.jpg" alt="Logo" class="logo-small">
+        <div class="header-text">
+            <h1>Scottish Norwegian Society (Glasgow)</h1>
+            <p>Velkommen – Welcome</p>
+        </div>
+    </div>
+</header>
+
+<!-- NEW SHORT DROPDOWN MENU -->
+<nav>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+            <a href="#">The Society</a>
+            <ul class="submenu">
+                <li><a href="objectives.html">Objectives</a></li>
+                <li><a href="council.html">Current Council</a></li>
+                <li><a href="history.html">Historical Timeline</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Syllabus</a>
+            <ul class="submenu">
+                <li><a href="next-meeting.html">Next Meeting</a></li>
+                <li><a href="annual-lecture.html">Annual Memorialorial Lecture</a></li>
+                <li><a href="julebasar.html">Julebasar</a></li>
+                <li><a href="sankthans.html">Sankthans</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">News</a>
+            <ul class="submenu">
+                <li><a href="notice-board.html">Notice Board</a></li>
+            </ul>
+        </li>
+
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="past-events.html">Past Events</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Welcome to the Scottish Norwegian Society</h2>
+
+    <p>The Scottish Norwegian Society in Glasgow brings together people with an interest in Norway,
+       Norwegian culture, history, language, and traditions. We meet regularly for talks, cultural
+       evenings, celebrations, and social events.</p>
+
+    <p>Our programme runs from September to June, and includes:</p>
+
+    <ul>
+        <li>Lectures and cultural presentations</li>
+        <li>Musical evenings and social gatherings</li>
+        <li>Annual Julebasar (Christmas Fair)</li>
+        <li>Special events celebrating Norwegian traditions</li>
+    </ul>
+
+    <p>New members are always welcome.</p>
+</main>
+
+<footer>
+    <p>© Scottish Norwegian Society (Glasgow)</p>
+</footer>
+
+</body>
+</html>

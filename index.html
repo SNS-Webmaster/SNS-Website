@@ -12,36 +12,35 @@
             padding: 0;
             background: #00205B; /* Blue background */
         }
-/* --- CENTERED BANNER MATCHING MAIN WIDTH --- */
-.banner-wrapper {
-    text-align: center;
-    padding: 20px 0;
-    background: #00205B; /* Blue background */
-    position: relative;
-}
 
-/* Banner image with double border */
-.banner-image {
-    width: 100%;
-    max-width: 900px;   /* SAME WIDTH AS MAIN CONTENT */
-    border: 6px solid #ffffff;      /* Outer white border */
-    box-shadow: 0 0 0 6px #EF2B2D;  /* Inner thin Norwegian-red border */
-    border-radius: 6px;
-}
+        /* --- CENTERED BANNER MATCHING MAIN WIDTH --- */
+        .banner-wrapper {
+            text-align: center;
+            padding: 20px 0;
+            background: #00205B;
+            position: relative;
+        }
 
-/* --- FLAG RIBBON (top-right corner) --- */
-.flag-ribbon {
-    position: absolute;
-    top: 25px;
-    right: calc(50% - 450px); /* aligns with banner edge */
-    width: 60px;
-    height: 40px;
-    background: url('SNS-Logo_Wood.jpg') no-repeat center center;
-    background-size: cover;
-    border: 3px solid #ffffff;
-    border-radius: 4px;
-}
+        .banner-image {
+            width: 100%;
+            max-width: 900px;   /* SAME WIDTH AS MAIN CONTENT */
+            border: 6px solid #ffffff;      /* Outer white border */
+            box-shadow: 0 0 0 3px #EF2B2D;  /* Inner thin Norwegian-red border */
+            border-radius: 6px;
+        }
 
+        /* --- FLAG RIBBON --- */
+        .flag-ribbon {
+            position: absolute;
+            top: 25px;
+            right: calc(50% - 450px); /* aligns with banner edge */
+            width: 60px;
+            height: 40px;
+            background: url('SNS-Logo_Wood.jpg') no-repeat center center;
+            background-size: cover;
+            border: 3px solid #ffffff;
+            border-radius: 6px;
+        }
 
         /* --- SMALL LOGO HEADER --- */
         .header-container {
@@ -71,22 +70,22 @@
             color: #EF2B2D;
         }
 
-        /* --- NAVIGATION BAR --- */
+        /* --- DROPDOWN MENU WITH ROUNDED CORNERS --- */
         nav {
             background: #EF2B2D;
-            padding: 10px 0;
             border-bottom: 4px solid #00205B;
         }
 
-        nav ul {
+        nav ul.menu {
             list-style: none;
             margin: 0;
             padding: 0;
             text-align: center;
         }
 
-        nav li {
+        nav ul.menu > li {
             display: inline-block;
+            position: relative;
             margin: 0 12px;
         }
 
@@ -95,10 +94,48 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 16px;
+            padding: 10px;
+            display: inline-block;
         }
 
         nav a:hover {
             text-decoration: underline;
+        }
+
+        /* --- SUBMENU --- */
+        nav ul.submenu {
+            display: none;
+            position: absolute;
+            background: #00205B;
+            padding: 10px 0;
+            list-style: none;
+            margin: 0;
+            border: 3px solid #EF2B2D;
+            border-radius: 10px; /* Rounded corners */
+            min-width: 180px;
+            z-index: 1000;
+        }
+
+        nav ul.submenu li {
+            display: block;
+            margin: 0;
+        }
+
+        nav ul.submenu a {
+            display: block;
+            padding: 8px 12px;
+            color: white;
+            font-size: 15px;
+        }
+
+        nav ul.submenu a:hover {
+            background: #EF2B2D;
+            border-radius: 6px;
+        }
+
+        /* --- SHOW SUBMENU ON HOVER --- */
+        nav li.dropdown:hover .submenu {
+            display: block;
         }
 
         /* --- MAIN CONTENT --- */
@@ -108,6 +145,7 @@
             padding: 30px;
             background: #ffffff;
             margin-top: 20px;
+            border-radius: 6px;
         }
 
         h2 {
@@ -123,110 +161,4 @@
             margin-top: 40px;
         }
 
-        /* --- MOBILE LAYOUT --- */
-        @media (max-width: 600px) {
-
-            .banner-image {
-                width: 90%;
-            }
-
-            .header-container {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .logo-small {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-
-            nav ul {
-                display: block;
-                text-align: left;
-                padding-left: 20px;
-            }
-
-            nav li {
-                display: block;
-                margin: 8px 0;
-            }
-
-            nav a {
-                font-size: 18px;
-            }
-
-            main {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 20px;
-            }
-
-            h2 {
-                font-size: 20px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-<!-- SMALLER CENTERED BANNER -->
-<div class="banner-wrapper">
-    <img src="17Mai-StudentCelebrations.png" alt="17 Mai Celebrations" class="banner-image">
-</div>
-
-<header>
-    <div class="header-container">
-        <img src="SNS-Logo_Wood.jpg" alt="Logo" class="logo-small">
-        <div class="header-text">
-            <h1>Scottish Norwegian Society (Glasgow)</h1>
-            <p>Velkommen – Welcome</p>
-        </div>
-    </div>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="programme.html">Programme</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="annual-lecture.html">Annual Memorial Lecture</a></li>
-        <li><a href="julebasar.html">Julebasar</a></li>
-        <li><a href="next-meeting.html">Next Meeting</a></li>
-        <li><a href="notice-board.html">Notice Board</a></li>
-        <li><a href="objectives.html">Objectives</a></li>
-        <li><a href="council.html">Current Council</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="history.html">History Timeline</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="past-events.html">Past Events</a></li>
-    </ul>
-</nav>
-
-<main>
-    <h2>Welcome to the Scottish Norwegian Society</h2>
-
-    <p>The Scottish Norwegian Society in Glasgow brings together people with an interest in Norway,
-       Norwegian culture, history, language, and traditions. We meet regularly for talks, cultural
-       evenings, celebrations, and social events.</p>
-
-    <p>Our programme runs from September to June, and includes:</p>
-
-    <ul>
-        <li>Lectures and cultural presentations</li>
-        <li>Musical evenings and social gatherings</li>
-        <li>Annual Julebasar (Christmas Fair)</li>
-        <li>Special events celebrating Norwegian traditions</li>
-    </ul>
-
-    <p>New members are always welcome.</p>
-</main>
-
-<footer>
-    <p>© Scottish Norwegian Society (Glasgow)</p>
-</footer>
-
-</body>
-</html>
+        /* ---

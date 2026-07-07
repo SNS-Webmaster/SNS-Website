@@ -6,87 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #ffffff; }
-        header { background: #00264d; color: white; text-align: center; padding-bottom: 10px; }
-        header img { width: 100%; height: 150px; object-fit: cover; display: block; }
-        nav { background: #ba0c2f; padding: 10px 0; border-bottom: 4px solid #00264d; }
-        nav ul { list-style: none; margin: 0; padding: 0; text-align: center; }
-        nav li { display: inline-block; margin: 0 12px; }
-        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 16px; }
-        nav a:hover { text-decoration: underline; }
-        main { max-width: 900px; margin: auto; padding: 30px; background: #ffffff; }
-        h2 { color: #00264d; }
-        footer { text-align: center; padding: 20px; background: #00264d; color: white;
-                 border-top: 4px solid #ba0c2f; margin-top: 40px; }
-        /* --- MOBILE LAYOUT IMPROVEMENTS --- */
-@media (max-width: 600px) {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+        }
 
-    header img {
-        height: 120px;
-    }
+        /* --- SMALL LOGO HEADER --- */
+        .header-container {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: #ffffff;
+            border-bottom: 4px solid #00205B;
+        }
 
-    nav ul {
-        display: block;
-        text-align: left;
-        padding-left: 20px;
-    }
+        .logo-small {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
 
-    nav li {
-        display: block;
-        margin: 8px 0;
-    }
+        .header-text h1 {
+            margin: 0;
+            font-size: 22px;
+            color: #00205B;
+        }
 
-    nav a {
-        font-size: 18px;
-    }
+        .header-text p {
+            margin: 0;
+            font-size: 16px;
+            color: #EF2B2D;
+        }
 
-    main {
-        padding: 20px;
-    }
+        /* --- NAVIGATION BAR --- */
+        nav {
+            background: #EF2B2D;
+            padding: 10px 0;
+            border-bottom: 4px solid #00205B;
+        }
 
-    h1 {
-        font-size: 24px;
-    }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
 
-    h2 {
-        font-size: 20px;
-    }
-}
+        nav li {
+            display: inline-block;
+            margin: 0 12px;
+        }
 
-    </style>
-</head>
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
 
-<body>
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-<header>
-    <img src="SNS-Logo_Wood.jpg" alt="Norwegian Flag Banner">
-    <h1>News</h1>
-    <p>Latest updates from the Society</p>
-</header>
+        /* --- MAIN CONTENT --- */
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            background: #ffffff;
+        }
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="programme.html">Programme</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="annual-lecture.html">Annual Memorial Lecture</a></li>
-        <li><a href="julebasar.html">Julebasar</a></li>
-        <li><a href="next-meeting.html">Next Meeting</a></li>
-        <li><a href="notice-board.html">Notice Board</a></li>
-        <li><a href="objectives.html">Objectives</a></li>
-        <li><a href="council.html">Current Council</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-</nav>
+        h2 {
+            color: #00205B;
+        }
 
-<main>
-    <h2>News</h2>
-    <p>Add Society news, announcements, and updates here.</p>
-</main>
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #00205B;
+            color: white;
+            border-top: 4px solid #EF2B2D;
+            margin-top: 40px;
+        }
 
-<footer>
-    <p>© Scottish Norwegian Society, Glasgow</p>
-</footer>
-
-</body>
-</html>
+        /* --- MOBILE LAYOUT --- */
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction:
